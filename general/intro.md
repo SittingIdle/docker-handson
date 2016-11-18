@@ -1,5 +1,5 @@
-# DevOps Hands-On
-### presented by  <!-- .element: style="margin: 50px 0px 0px 0px" -->
+# Docker Hands-On
+## @  <!-- .element: style="margin: 50px 0px 0px 0px" -->
 
 ![Emirates Logo](img/emirates-medium.png) <!-- .element: style="margin: 50px 0px 80px 0px" class="noborder" -->
 
@@ -11,17 +11,15 @@ Adriaan de Jonge - [adriaan.dejonge@emirates.com](adriaan.dejonge@emirates.com)
 
 ## Table of Content
 
- * Day 1:
-    * Docker
-    * Git (refresher)
-    * Jenkins
- * Day 2:
-    * Kubernetes
-    * DevOps Release Strategies
-    * Maturity Models
+ * Getting started
+ * Concepts
+ * Pulling Images
+ * Running Containers
+ * Building Images
+ * Dockerfiles
+ * Volumes
+ * Networks
 
 !SLIDE
 
-## Day 1 - Part 1
-
-# Docker <!-- .element: style="margin: 50px 0px 0px 0px" -->
+## Getting started

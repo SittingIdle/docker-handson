@@ -1,43 +1,11 @@
 ## Introduction to Images
 
 
-!SUB
-## Objectives
-
-In this section, we will explain:
-
-- What is an image
-- What is a layer
-- The various image namespaces
-- How to search and download images
-
-
-!SUB
-## What is an image?
-
-- An image is a collection of files + some meta data
-    (Technically: those files form the root filesystem of a container)
-- Images are made of *layers*, conceptually stacked on top of each other
-- Each layer can add, change, and remove files
-- Images can share layers to optimize disk usage, transfer times, and memory use
-- Images are read-only
-- Images do not have running processes
 
 
 !SUB
 ## Image layers
 ![Image Layers](img/docker-filesystems-multilayer.png) <!-- .element class="noborder" -->
-
-
-!SUB
-## Differences between containers and images
-
-- An image is a read-only filesystem.
-- A container is an encapsulated set of processes running in a
-  read-write copy of that filesystem.
-- To optimize container boot time, *copy-on-write* is used
-  instead of regular copy.
-- `docker run` starts a container from a given image.
 
 
 !SUB
@@ -47,16 +15,6 @@ Images are like templates or stencils that you can create (multiple) containers 
 
 ![stencil](img/stenciling-wall.jpg) <!-- .element class="noborder" -->
 
-
-!SUB
-## Compared to Git (or similar SCM)
-
-Not by coincidence, working with Docker resembles working with Git:
-
-- Images are conceptually similar to *revisions*
-- Layers are conceptually similar to *commits*
-- Containers are conceptually similar to *working copies*
-- Docker registries are conceptually similar to *GitHub and Co*
 
 !SUB
 ## Wait a minute...
@@ -69,23 +27,6 @@ If an image is read-only, how do you change it?
 - When you are satisfied with those changes, transform them into a new layer
 - A new image is created by stacking the new layer on top of the old image
 
-
-!SUB
-## In practice
-
-There are multiple ways to create new images.
-
-- `docker commit`: creates a new layer (and a new image) from a container.
-- `docker build`: performs a repeatable build sequence.
-- `docker import`: loads a tarball into Docker, as a standalone base layer.
-
-We will explain `commit` and `build` in later chapters.
-
-`import` can be used for various hacks, but its main purpose is to bootstrap
-the creation of base images.
-
-Note:
-You could for instance use import to bootstrap a local registry, create a base image.
 
 !SUB
 ## Images namespaces
