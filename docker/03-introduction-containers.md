@@ -1,11 +1,6 @@
 ## What are Containers?
 
-!SUB
-## Objectives
-In this section, we will explain:
-- Learn what containers are (and what they are not)
-- Learn the key differences of containers vs VM's
-- Learn the benefits of using containers
+
 
 !SUB
 ## A quick history overview
@@ -35,17 +30,3 @@ Slide left empty intentionally: Ask for participants view of containers (no disc
 - Less resource usage
 - More containers per machine than VMs
 - Greater portability
-
-!SUB
-## Containers
-- wrap up a piece of software in a complete filesystem that contains everything it needs to run
-- are lightweight;
-  - share the host-OSs kernel; start fast, efficient RAM usage
-  - use images which are constructed from layered filesystem; sharing of common files, efficient disk usage and downloads
-Note: Review the flipover
-
-!SUB
-## Quiz: A Container is ...
-1. A small VM containing your application
-2. An isolated environment for running your software
-3. A way to package your software

@@ -1,12 +1,7 @@
 ## Building images
 
 
-!SUB
-## Objectives
-In this section we will explain:
-- How to build images interactively
-- What Dockerfiles are
-- How to use Dockerfiles
+
 
 
 !SUB

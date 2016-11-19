@@ -1,13 +1,6 @@
 ## Container Networking
 
 
-!SUB
-## Objectives
-In this section we will explain:
-
-* How to expose ports
-* Docker network models
-* How to connect containers
 
 
 !SUB

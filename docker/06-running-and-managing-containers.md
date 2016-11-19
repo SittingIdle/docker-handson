@@ -1,29 +1,5 @@
 ## Running and managing containers
 
-!SUB
-## Objectives
-In this section, we will explain:
-- How to launch containers
-- Different methods of accessing a container
-- How container processes work
-- How to stop and start containers
-- How to check container logs
-- How to find your containers with the ```docker ps``` command
-- How to display information about a container
-
-!SUB
-## Container lifecycle
-- Basic lifecycle of a Docker container
-  - Create container from image
-  - Run container with a specified process
-  - Process finishes and container stops
-  - Destroy container
-- More advanced lifecycle
-  - Create container from image
-  - Run container with a specified process
-  - Interact and perform other actions inside the container
-  - Stop the container
-  - Restart the container
 
 !SUB
 ## Creating and running a container

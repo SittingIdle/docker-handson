@@ -1,13 +1,5 @@
 ## Managing and distributing images
 
-!SUB
-## Objectives
-
-In this section, we will explain:
-
-- How to delete and tag images
-- How we can distribute our images
-- How we can setup public and private repositories in Docker Hub
 
 !SUB
 ## Deleting images
@@ -77,4 +69,3 @@ You can create repositories beforehand or have docker push create it automatical
     $ docker pull ubuntu
     $ docker tag ubuntu myrepo/mycompany/ubuntu
     $ docker push myrepo/mycompany/ubuntu
-

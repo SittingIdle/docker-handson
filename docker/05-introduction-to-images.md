@@ -17,11 +17,17 @@ Images are like templates or stencils that you can create (multiple) containers 
 
 
 !SUB
-## Wait a minute...
+## Exercise:<br>Pull an image
 
-If an image is read-only, how do you change it?
+Type the following command and see what happens:
 
-- You don't
+    docker pull ubuntu
+
+!SUB
+## How do you change an image?
+
+You don't
+
 - You create a new container from that image
 - Then you make changes to that container
 - When you are satisfied with those changes, transform them into a new layer
@@ -45,74 +51,7 @@ There are three namespaces:
 
         my-registry:5000/my-image
 
-Let's explain each of them.
 
-
-!SUB
-## Root namespace
-
-The root namespace is for official images. They are put there by Docker Inc.,
-but they are generally authored and maintained by third parties.
-
-Those images include:
-
-* Small, "swiss-army-knife" images like `busybox`.
-* Distro images to be used as bases for your builds, like `ubuntu`, `fedora`...
-* Ready-to-use components and services, like `redis`, `postgresql`...
-
-
-!SUB
-## User namespace
-
-The user namespace holds images for Docker Hub users and organizations.
-
-For example:
-
-        jpetazzo/clock
-
-The Docker Hub user is:
-
-        jpetazzo
-
-The image name is:
-
-        clock
-
-
-!SUB
-## Self-Hosted namespace
-
-This namespace holds images which are not hosted on Docker Hub, but on third
-party registries.
-
-They contain the hostname (or IP address), and optionally the port, of the
-registry server.
-
-For example:
-
-        localhost:5000/wordpress
-
-The remote host and port is:
-
-        localhost:5000
-
-The image name is:
-
-        wordpress
-
-
-!SUB
-## How do you store and manage images?
-
-Images can be stored:
-
-* On your Docker host
-* In a Docker registry
-
-You can use the Docker client to download (pull) or upload (push) images.
-
-Or more accurately: use the Docker client to tell a Docker daemon
-to push and pull images to and from a registry.
 
 
 !SUB

@@ -1,12 +1,6 @@
 ## Container Volumes
 
-!SUB
-## Objectives
-In this section, we will explain:
-* What volumes are
-* How to run containers holding volumes
-* How to share volumes across containers
-* How to share a host directory with one or many containers
+
 
 
 !SUB
@@ -150,4 +144,3 @@ Share the Docker socket and binary with your container, and you can run Docker f
     98c072119679  ubuntu  "/bin/bash"  4 seconds ago  Up 4 seconds         determined_northcutt
 
 But be careful: if a container can access `/var/run/docker.sock`, it will be able to do *anything it wants* on the host!
-

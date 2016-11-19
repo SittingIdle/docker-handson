@@ -1,11 +1,7 @@
 ## Advanced Dockerfiles
 
 
-!SUB
-## Objectives
-In this section we will explain:
-- What we can do in Dockerfiles
-- How to write effective Dockerfiles
+
 
 
 !SUB
