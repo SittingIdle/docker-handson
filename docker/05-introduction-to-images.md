@@ -24,9 +24,9 @@ Type the following command and see what happens:
     docker pull ubuntu
 
 !SUB
-## How do you change an image?
+### How do you change an image?
 
-You don't
+### *You don't*
 
 - You create a new container from that image
 - Then you make changes to that container
@@ -60,18 +60,10 @@ There are three namespaces:
 Let's look at what images are on our host now.
 
     $ docker images
-    REPOSITORY         TAG     IMAGE ID     CREATED     VIRTUAL SIZE
-    ubuntu             13.10   9f676bd305a4 7 weeks ago 178 MB
-    ubuntu             saucy   9f676bd305a4 7 weeks ago 178 MB
-    ubuntu             raring  eb601b8965b8 7 weeks ago 166.5 MB
-    ubuntu             13.04   eb601b8965b8 7 weeks ago 166.5 MB
-    ubuntu             12.10   5ac751e8d623 7 weeks ago 161 MB
-    ubuntu             quantal 5ac751e8d623 7 weeks ago 161 MB
-    ubuntu             10.04   9cc9ea5ea540 7 weeks ago 180.8 MB
-    ubuntu             lucid   9cc9ea5ea540 7 weeks ago 180.8 MB
-    ubuntu             12.04   9cd978db300e 7 weeks ago 204.4 MB
-    ubuntu             latest  9cd978db300e 7 weeks ago 204.4 MB
-    ubuntu             precise 9cd978db300e 7 weeks ago 204.4 MB
+    REPOSITORY  TAG     IMAGE ID      CREATED      SIZE
+    ubuntu      latest  e4415b714b62  4 days ago   128.1 MB
+
+
 
 !SUB
 ##  Exercise:<br>Searching for images

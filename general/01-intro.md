@@ -19,7 +19,3 @@ Adriaan de Jonge - [adriaan.dejonge@emirates.com](adriaan.dejonge@emirates.com)
  * Dockerfiles
  * Volumes
  * Networks
-
-!SLIDE
-
-## Getting started

@@ -34,6 +34,10 @@ cd73db25f897        shipyard/shipyard   "/bin/controller"        8 hours ago    
 ```bash
 docker run -i -t ubuntu:latest bash
 ```
+Because of defaults, this will give the same result:
+```bash
+docker run -it ubuntu
+```
 
 !SUB
 ## Exit the terminal
@@ -51,12 +55,38 @@ docker run -i -t ubuntu:latest bash
 <img src="img/docker-pid1.jpg">
 
 !SUB
+## See for yourself
+
+Compare the results:
+
+    docker run ubuntu ps
+
+and:
+
+    docker run -ti ubuntu bash
+    ps
+
+Which process has PID 1?
+
+
+!SUB
 ## Container ID
 - Containers can be specified using their ID or name
 - Long ID and short ID
 - Short ID and name can be obtained using docker ps command to list
 containers
 - Long ID obtained by inspecting a container
+- Long IDs will be returned when you start a daemon process
+
+!SUB
+
+## One way to obtain a long ID:
+
+    $ export MYID=$(docker run -d ubuntu sleep 100)
+    $ echo $MYID
+    4d964fb02e4b2c370b4402af9b6457384b7677eb3586943b6c51ed33b65c3b2b
+
+But obviously you should prefer the `--name` parameter over this.
 
 !SUB
 ## Docker ps
@@ -229,4 +259,12 @@ docker inspect --format='{{.Config.Cmd}}' <container id>
 - Feed the output into ```docker rm``` command
 ```
 docker rm $(docker ps –aq)
+```
+
+!SUB
+# NUCLEAR!
+## If you also want to stop any running containers
+
+```
+docker rm $(docker stop $(docker ps -q))
 ```
