@@ -136,6 +136,7 @@ Share the Docker socket and binary with your container, and you can run Docker f
 
     $ docker run -it \
         -v /var/run/docker.sock:/var/run/docker.sock \
+        -v /usr/lib/libdevmapper.so.1.02:/lib/libdevmapper.so.1.02 \
         -v $(which docker):$(which docker) \
         ubuntu
 
