@@ -121,6 +121,7 @@ So let's automate :)
 * Each `RUN` line will be executed during the build
 * `RUN` commands must be *non-interactive*
 
+Note to Docker experts: Yes, this Dockerfile is flawed; we'll get to that later.
 
 !SUB
 ## Building Dockerfiles
