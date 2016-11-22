@@ -62,6 +62,7 @@ Both can add files from local `<src>` to `<dest>` in our image.
 
 Here is the program, `hello.c`:
 
+    #include <stdio.h>
     int main () {
         puts("Hello, world!");
         return 0;
