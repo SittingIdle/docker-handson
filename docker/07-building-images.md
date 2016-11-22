@@ -30,7 +30,7 @@ See next slide...
 ## Exercise:<br>Building manually
 
     $ docker run -it ubuntu bash
-    root@<container_id>:#/ wget -q -O- http://ifcfg.me/ip
+    root@<container_id>:#/ wget -q -O- http://api.ipify.org/
     bash: wget: command not found
 
     root@<container_id>:#/ apt-get update
@@ -39,7 +39,7 @@ See next slide...
     root@<container_id>:#/ apt-get install -y wget
     ...
 
-    root@<container_id>:#/ wget -q -O- http://ifcfg.me/ip
+    root@<container_id>:#/ wget -q -O- http://api.ipify.org/
     12.34.56.78
 
     root@<container_id>:#/ exit
@@ -198,7 +198,7 @@ When starting you container, you'll end up in a `bash` shell in your container
 
 We can tell Docker to execute a different command when starting the container, by adding a line to our `Dockerfile`:
 
-    CMD wget -O- -q http://ifcfg.me/ip
+    CMD wget -O- -q http://api.ipify.org/
 
 
 !SUB
