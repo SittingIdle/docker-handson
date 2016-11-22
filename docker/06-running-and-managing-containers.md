@@ -14,18 +14,6 @@ docker run [options] [image] [command] [args]
 - Image is specified with ```repository:tag```
 
 !SUB
-## Find your containers
-- Use ```docker ps``` to list running containers
-- The ```-a``` flag to list all containers (includes containers that are stopped)
-```
-CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                     PORTS               NAMES
-cd73db25f897        shipyard/shipyard   "/bin/controller"        8 hours ago         Exited (0) 8 hours ago                         admiring_visvesvaraya
-8aa4a6df4ba5        ubuntu              "/bin/sh -c 'while tr"   8 hours ago         Up 8 hours                                     furious_archimedes
-88c91c013ac7        redis               "/entrypoint.sh redis"   9 hours ago         Exited (137) 8 hours ago                       evil_knuth
-97b26be554ec        nginx               "nginx -g 'daemon off"   9 hours ago         Exited (0) 9 hours ago                         sad_leavitt
-```
-
-!SUB
 ## Container with terminal
 - Use ```-i``` and ```-t``` flags with ```docker run```
 - The ```-i``` flag tells Docker to connect to STDIN on the container
@@ -44,6 +32,19 @@ docker run -it ubuntu
 - Type ```exit``` to quit the terminal and return to your host terminal
 - Exiting the terminal will shutdown the container
 - To exit the terminal without a shutdown, hit ```CTRL + P + Q``` together
+
+!SUB
+## Find your containers
+- Use ```docker ps``` to list running containers
+- The ```-a``` flag to list all containers (includes containers that are stopped)
+```
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                     PORTS               NAMES
+cd73db25f897        shipyard/shipyard   "/bin/controller"        8 hours ago         Exited (0) 8 hours ago                         admiring_visvesvaraya
+8aa4a6df4ba5        ubuntu              "/bin/sh -c 'while tr"   8 hours ago         Up 8 hours                                     furious_archimedes
+88c91c013ac7        redis               "/entrypoint.sh redis"   9 hours ago         Exited (137) 8 hours ago                       evil_knuth
+97b26be554ec        nginx               "nginx -g 'daemon off"   9 hours ago         Exited (0) 9 hours ago                         sad_leavitt
+```
+
 
 !SUB
 ## Container processes
