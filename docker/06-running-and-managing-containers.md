@@ -38,6 +38,7 @@ docker run -it ubuntu
 - Use ```docker ps``` to list running containers
 - The ```-a``` flag to list all containers (includes containers that are stopped)
 ```
+$ docker ps -a
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                     PORTS               NAMES
 cd73db25f897        shipyard/shipyard   "/bin/controller"        8 hours ago         Exited (0) 8 hours ago                         admiring_visvesvaraya
 8aa4a6df4ba5        ubuntu              "/bin/sh -c 'while tr"   8 hours ago         Up 8 hours                                     furious_archimedes
