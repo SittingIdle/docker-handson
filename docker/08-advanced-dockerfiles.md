@@ -67,9 +67,9 @@ Here is the program, `hello.c`:
         puts("Hello, world!");
         return 0;
     }
-
-We can compile it by running `make hello`
-`make` is part of the `build-essential` package on Debian and Ubuntu.
+Hints:
+ * We can compile it by running `make hello`
+ * `make` is part of the `build-essential` package on Debian and Ubuntu.
 
 
 !SUB
