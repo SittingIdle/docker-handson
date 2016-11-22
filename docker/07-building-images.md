@@ -237,8 +237,8 @@ We want to be able to only specify a different URL on the command line, without 
 
 In other words, we would like to be able to do this:
 
-    $ docker run ifconfigme http://ifcfg.me/ua
-    Wget/1.12 (linux-gnu)
+    $ docker run ifconfigme http://api.ipify.org/?format=json
+    {"ip":"217.165.78.103"}
 
 
 !SUB
@@ -258,8 +258,8 @@ Modify your Dockerfile so it always executes `wget`, then build and run it:
     $ docker build -t ifconfigme .
     Successfully built 042dff3b4a8d
 
-    $ docker run ifconfigme http://ifcfg.me/ua
-    Wget/1.12 (linux-gnu)
+    $ docker run ifconfigme http://api.ipify.org/?format=json
+    {"ip":"217.165.78.103"}
 
 
 !SUB
@@ -288,8 +288,8 @@ Modify your Dockerfile so you get your IP by default, but you can also specify o
     $ docker run ifconfigme
     64.134.229.24
 
-    $ docker run ifconfigme http://ifcfg.me/ua
-    Wget/1.12 (linux-gnu)
+    $ docker run ifconfigme http://api.ipify.org/?format=json
+    {"ip":"217.165.78.103"}
 
 
 !SUB
