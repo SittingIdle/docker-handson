@@ -163,7 +163,7 @@ docker run → cannot be detached with ^P^Q; can SIGKILL client; can reattach wi
 
 
 !SUB
-## Exercise:<br>Run an interactive ubuntu container and detach (container stays running), check ```docker ps``` and attach to it
+## Run an interactive ubuntu container and detach (container stays running), check ```docker ps``` and attach to it
 
 !SUB
 ## Docker exec

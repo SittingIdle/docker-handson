@@ -17,7 +17,7 @@ Images are like templates or stencils that you can create (multiple) containers 
 
 
 !SUB
-## Exercise:<br>Pull an image
+## Pull an image
 
 Type the following command and see what happens:
 
@@ -55,7 +55,7 @@ There are three namespaces:
 
 
 !SUB
-## Exercise:<br>Showing current images
+## Showing current images
 
 Let's look at what images are on our host now.
 
@@ -66,7 +66,7 @@ Let's look at what images are on our host now.
 
 
 !SUB
-##  Exercise:<br>Searching for images
+##  Searching for images
 
 Searches your registry for images:
 
@@ -93,7 +93,7 @@ There are two ways to download images.
 
 
 !SUB
-## Exercise:<br>Pull Debian image
+## Pull Debian image
 
     $ docker pull debian
     Using default tag: latest
@@ -107,7 +107,7 @@ There are two ways to download images.
 
 
 !SUB
-## Exercise:<br>Pull Debian Jessie image
+## Pull Debian Jessie image
 
     $ docker pull debian:jessie
     jessie: Pulling from library/debian

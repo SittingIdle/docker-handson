@@ -24,6 +24,7 @@ Then, we will use a `Dockerfile` and `docker build`.
 - Update repositories and install `wget`
 - Exit container and `commit` changes into new image
 
+See next slide...
 
 !SUB
 ## Exercise:<br>Building manually
@@ -83,7 +84,7 @@ We can use the `tag` command:
 
 
 !SUB
-## Exercise:<br>Tag your image
+## Tag your image
 
 Tag newly created image with new name
 
