@@ -82,6 +82,7 @@ We can use the `tag` command:
 
     $ docker tag <image_id_or_name> <new_name>
 
+Note: The above is FYI - there is not much use in the current exercise.
 
 !SUB
 ## Tag your image
